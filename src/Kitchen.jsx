@@ -2,16 +2,17 @@ import Oven from './Oven'
 import Sink from './Sink'
 
 const Kitchen = () => {
-  return (  
-    <div>
+  return (
+      <div className='kitchen'>
       Kitchen
-      <div>
+      <div className='oven'>
       <Oven />
       </div>
-      <div>
+
+      <div className='sink'>
       <Sink />
       </div>
-    </div>
+      </div>
   );
 }
 

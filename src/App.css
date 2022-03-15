@@ -1,5 +1,81 @@
-div {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;
+.floorplan {
+  color: white;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 1fr 1fr; 
+  grid-template-rows: 1fr 3fr 2fr 4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Bedroom-1 Living-Room Living-Room Kitchen Kitchen"
+    "Bedroom-1 Living-Room Living-Room Kitchen Kitchen"
+    "Full-Bath Living-Room Living-Room Kitchen Kitchen"
+    "Bedroom-2 Half-Bath Bedroom-3 Bedroom-3 Bedroom-3";
+  width: 60%;
+  text-align: center;
+}
+
+.bedroom {
+  background-color: #2b7187;
+  font-weight: bold;
+}
+
+#bed-1 {
+  grid-area: Bedroom-1;
+  line-height: 400px;
+}
+
+#bed-2 {
+  grid-area: Bedroom-2;
+  line-height: 300px;
+}
+
+#bed-3 {
+  grid-area: Bedroom-3;
+  line-height: 300px;
+}
+
+.bath {
+  background-color: #718730;
+  line-height: 200px;
+  font-weight: bold;
+}
+
+#Full-bath {
+  grid-area: Full-Bath;
+}
+
+#Half-bath {
+  grid-area: Half-Bath;
+  line-height: 300px;
+}
+
+.living-room {
+  grid-area: Living-Room;
+  background-color: #c9ab82;
+  line-height: 600px;
+  font-weight: bold;
+}
+
+.kitchen {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: 
+  "Oven Sink";
+  grid-area: Kitchen;
+  background-color: #f1a73a;
+  text-align: center;
+  line-height: 300px;
+  font-weight: bold;
+}
+
+.oven {
+  grid-area: Oven;
+  background-color: #ce5932;
+  line-height: 50px;
+}
+
+.sink {
+  grid-area: Sink;
+  background-color: #935613;
+  line-height: 50px;
 }

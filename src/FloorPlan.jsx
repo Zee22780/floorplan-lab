@@ -6,7 +6,7 @@ import Bath from "./Bath"
 
 const FloorPlan = () => {
   return ( 
-    <div>
+    <div className="floorplan">
     FloorPlan
     <Bedroom bedNum={1}/>
     <Kitchen />
